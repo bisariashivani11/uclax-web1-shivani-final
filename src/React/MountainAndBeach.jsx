@@ -17,6 +17,7 @@ const MountainAndBeach = () => {
             The Mountain And Beach
             <img
                 src={ imageSrc }
+                alt='The Mountain and Beaches'
                 onMouseOver={ imageOver }
                 onMouseOut={ imageOut }
             />

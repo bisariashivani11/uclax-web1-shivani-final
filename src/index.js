@@ -13,9 +13,9 @@ import ReactDOM from 'react-dom';
 /*---------------------------
 | Components
 ---------------------------*/
-import MountainAndBeach from './React/MountainAndBeach.jsx';
+import Container from './React/Container.jsx';
 
 /*---------------------------
 | Render to DOM
 ---------------------------*/
-ReactDOM.render(<MountainAndBeach />, document.getElementById('root'));
+ReactDOM.render(<Container />, document.getElementById('root'));
