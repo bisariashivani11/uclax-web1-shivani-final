@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const MountainAndBeach = () => {
+const Login = () => {
 
     const [imageSrc, imageSrcUpdate] = useState('/assets/img/mountain.jpg');
 
@@ -14,7 +14,7 @@ const MountainAndBeach = () => {
 
     return (
         <div>
-            The Mountain And Beach
+            <h1>The Mountain And Beach</h1>
             <img
                 src={ imageSrc }
                 alt='The Mountain and Beaches'
@@ -25,4 +25,4 @@ const MountainAndBeach = () => {
     )
 }
 
-export default MountainAndBeach;
+export default Login;

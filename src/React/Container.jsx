@@ -1,20 +1,22 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
 import Header from './Header.jsx';
 import Nav from './Nav.jsx'
-import MountainAndBeach from './MountainAndBeach.jsx';
+import Main from './Main.jsx';
 import Footer from './Footer.jsx';
 
 const Container = () => {
 
     return (
-        <div className='Container'>
-            CONTENT
-            <Header />
-            <Nav />
-            <MountainAndBeach />
-            <Footer />
-        </div>
+        <BrowserRouter>
+            <div className='Container'>
+                <Header />
+                <Nav />
+                <Main />
+                <Footer />
+            </div>
+        </BrowserRouter>
     );
 }
 
