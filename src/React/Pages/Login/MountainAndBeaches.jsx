@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
+import styled from 'styled-components';
 
-const Login = () => {
+const MountainAndBeaches = () => {
 
     const [imageSrc, imageSrcUpdate] = useState('/assets/img/mountain.jpg');
 
@@ -13,16 +14,20 @@ const Login = () => {
     }
 
     return (
-        <div>
-            <h1>The Mountain And Beach</h1>
+        <MountainAndBeachesStyled className='MountainAndBeaches'>
+            <h2>MountainAndBeaches</h2>
             <img
                 src={ imageSrc }
                 alt='The Mountain and Beaches'
                 onMouseOver={ imageOver }
                 onMouseOut={ imageOut }
-            />
-        </div>
-    )
+            /> 
+        </MountainAndBeachesStyled>
+    );
 }
 
-export default Login;
+export default MountainAndBeaches;
+
+const MountainAndBeachesStyled = styled.div`
+    
+`;
