@@ -205,6 +205,23 @@
                 PNG or Portable Network Graphics is an image format designed for the web. It takes the best part of JPEG and GIF. It supports transparency in browsers and is non-lossy that is images can be compressed without degrading the quality. PNG supports 8-bit color like GIF, but also supports 24-bit color RGB like JPEG. PNG comes in 2 formats: PNG-8 and PNG-24. The major difference between the two formats is the number of colors supported by each. PNG-8 can display a max of 256 colors while PNG-24 can display millions of colors. Use of PNG can be found in web graphics which requires transparency, color heavy photographs and images that require re-editing and re-exporting. It also supports embedded short texts. Search engines may find this useful to filter based on the content of the embedded texts.<br><br>
                 <b>SVG</b><br>
                 SVG or Scalable Vector Graphics is a vector format. SVG is written in XML-based markup and is very different compared to the other formats. SVGs are very scalable. Unlike the other formats, SVGs are made of mathematically declared shapes and curves. Hence, there is no pixel limitation. SVGs can be modified using CSS and JavaScript and can also be animated. They are typically of smaller sizes. The size of the file depends on the complexity of the image and not on how large it is.  SVG is thus best suited for logos, icons, charts, graphics etc. that consists of lines and shapes compared to JPEG and PNG. However for a more complex image like a photograph, this format might not be an ideal one.
-
+            </p>
+        <h2>What are testing environments? What is the difference between Local, Dev, QA and Production?</h2>
+            <p><b>Testing environments</b><br>
+                A testing environment is a space where you can test any change, update, fix bugs to validate the application before forwarding it into release. The test environment includes the software as well as hardware with the appropriate configuration settings<br><br>
+                <b>Local </b><br>
+                During the development phase of a programming project, i.e., writing code and testing it, data scientists and software engineers often code on their local machine (computer). The machine is usually a laptop or desktop running a non-server operating system. The local environment is under the full control of the individual developer because :
+                <ul>
+                    <li>Its easy to quickly test, debug and update code.</li>
+                    <li>A developer can work without affecting the work of other developers.</li>
+                </ul>
+                <b>Dev </b><br>
+                Development Environment  is the shared location for all the developers to check their code against all the changes of the release. This is known as integration testing. A common practice today is to automate the tests such that after the codes are updated to the repository and there are no errors building, the application automatically builds up and the integration tests automatically gets executed.
+                <br><br>
+                <b>QA</b><br>
+                Stable versions of the build are released to the QA environment for a rigorous functional, integration, regression and other types of testing. This environment can be further tested by splitting it into two different environments: QA and Pre-Production. The bulk of the application testing efforts occur in the QA environment, and the bugs logged refers to the issues found in this environment. It is an important step to make sure of the software release readiness.<br><br>
+                <b>Production</b><br>
+                The Production environment is configured to host the latest released code and its enhanced functionality to the users. It is hosted on a live server and must work smoothly and without any issues in order to provide a pleasant end-user experience. While successive builds of the application are being tested in the QA and Dev environment, the app continues to run unaffected in production.  This version preferably does not change except for during scheduled releases.
+            </p>
     </body>
 </html>
