@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 
-
-
 const Nav = () => {
     return (
         <NavStyled className="Nav">

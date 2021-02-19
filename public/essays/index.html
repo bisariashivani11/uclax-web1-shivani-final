@@ -223,5 +223,24 @@
                 <b>Production</b><br>
                 The Production environment is configured to host the latest released code and its enhanced functionality to the users. It is hosted on a live server and must work smoothly and without any issues in order to provide a pleasant end-user experience. While successive builds of the application are being tested in the QA and Dev environment, the app continues to run unaffected in production.  This version preferably does not change except for during scheduled releases.
             </p>
+        <h2>Function vs Form: When are web images considered part of the content (HTML) as opposed to part of the appearance (CSS)?</h2>
+            <p>
+                If an image has meaning, in terms of your content, you should use an HTML image. If an image is purely decoration, you should use CSS background images.<br><br>
+                <b>HTML</b><br>
+                    <ul>
+                        <li>Using the img tag is related to SEO - i.e. you can provide additional information about the image in the ALT attribute of the image tag, while there's no way to provide such information when specifying the image through CSS and in that case only the image file name may be indexed by search engines. The ALT attribute definitely gives the img tag SEO advantage over the CSS approach. </li>
+                        <li>IMG should be used if you intend to have people print your page and you want the image to be included by default.</li>
+                        <li>IMG with alt text should be used when the image has an important semantic meaning, such as a warning icon. This ensures that the meaning of the image can be communicated in all user-agents, including screen readers.</li>
+                        <li>IMG plus alt attribute should be used if the image is part of content such as a logo or diagram.</li>
+                        <li>IMG should be used if you rely on browser scaling to render an image in proportion to text size.</li>
+                    </ul>
+                <b>CSS</b>
+                    <ul>
+                        <li>Background images can be used if the image is part of the overall-design and is repeated on multiple pages. Preferably in background sprite form for optimization.</li>
+                        <li>Can be used when the images are purely used to design and has no relation to the content</li>
+                        <li>Background-images can be used  when doing image-replacement of text eg. paragraphs/headers.</li>
+                        <li>Background-image should be used if you need to have people print your page and do not want the image to be included by default.</li>
+                    </ul>
+            </p>
     </body>
 </html>
