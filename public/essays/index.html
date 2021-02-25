@@ -250,5 +250,37 @@
             For smaller slideshows that don’t take up the entire width of the page, but maybe just a percentage of it, the required image size maybe adjusted accordingly (maybe 2000px, or 1800px, etc.)<br><br>
             <b>For static images used in page layouts and thumbnails</b><br>
             Static images should be sized depending on the width of that column or content area. For e.g. if an image needs to get displayed at 260×174 pixels in width based on the page layout, you’d upload images at twice that size: i.e. 520×348 pixels.</p>
+        <h2>What is the difference between ID's, Classes and Tags? How does Specificity play a role in the selection of HTML elements (both in CSS and JS)</h2>
+            <p>
+                <b>HTML id Attribute:</b><br>The id attribute is a unique identifier which is used to specify the document. It is used by CSS and JavaScript to perform a certain task for a unique element. In CSS, the id attribute is written using # symbol followed by id.<br><br>
+                <b>HTML class Attribute:</b><br>The class name can be used by CSS and JavaScript on any HTML elements to perform certain tasks with the specified class name.Class selectors are defined using a period, followed by the value of the class that you want to apply a set of styles to.<br><br>
+                <b>HTML Tags</b><br> An HTML tag is a special word or letter surrounded by angle brackets, < and >. HTML tags are the hidden keywords within a web page that define how your web browser must format and display the content. Most tags must have two parts, an opening and a closing part.<br><br>
+                <b>IDs versus Classes</b><br>
+                    <ul>
+                        <li>The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.</li>
+                        <li>Classes have no special abilities in the browser unlike the IDs. IDs are special since you can use a special URL to link directly to an element and it’s used by JavaScript.Classes, on the other hand, can reflect multiple elements on a web page.</li>
+                        <li>  IDs are commonly used in that programming language. The function getElementById allows you to select an element on a web page. It relies on the fact that only one element can share the same ID unlike the classes.
+                        </li>
+                    </ul>
+                <b>Specifity</b><br>
+                If there are two or more conflicting CSS rules that point to the same element, the browser follows some rules to determine which one is most specific and therefore wins out.<br>
+                    <ul>
+                        <li>When multiple declarations have equal specificity, the last declaration found in the CSS is applied to the element. Specificity only applies when the same element is targeted by multiple declarations. </li>
+                        <li>As per CSS rules, directly targeted elements will always take precedence over rules which an element inherits from its ancestor.</li>
+                        <li>The universal selector (*) has low specificity, while ID selectors are highly specific</li>
+                        <li>Contextual selectors are more specific than a single element selector The embedded style sheet is closer to the element to be styled. </li>
+                        <li>Class selector beats any number of element selectors - a class selector such as .intro beats h1, p, div, etc:</li>
+                        <li>The universal selector and inherited values have a specificity of 0 - *, body * and similar have a zero specificity. Inherited values also have a specificity of 0.</li>
+                    </ul>
+                
+                <b>Calculating Specificity</b></p>
+                <img src="../assets/img/specificity.png" alt="Calculating specificity">
+                    <p>Note: Image has been taken from css-tricks.com</p>
+                    <ul>
+                        <li>If the element has inline styling, that automatically1 wins (1,0,0,0 points)</li>
+                        <li>For each ID value, apply 0,1,0,0 points</li>
+                        <li>For each class value (or pseudo-class or attribute selector), apply 0,0,1,0 points</li>
+                        <li>For each element reference, apply 0,0,0,1 point</li>
+                    </ul>
     </body>
 </html>
