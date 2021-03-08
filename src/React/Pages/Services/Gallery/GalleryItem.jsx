@@ -23,7 +23,7 @@ const GalleryItem = ({ item }) => {
         >
             <div onClick={ handleOnShow }>
                 <img src={ item.image } alt={ item.title } />
-                {/* <h2>{ item.title }</h2> */}
+                <h2>{ item.title }</h2>
                 <h3>{ item.category }</h3>
             </div>
 
@@ -31,7 +31,9 @@ const GalleryItem = ({ item }) => {
                 show={ showLightbox }
                 onHide={ handleOnHide }
             >
-                { item.title }
+                <img src={ item.image } alt={ item.title } />
+                <h3>{ item.category }</h3>
+                <h2>{ item.title }</h2>
             </Lightbox>
         </GalleryItemStyled>
     );
